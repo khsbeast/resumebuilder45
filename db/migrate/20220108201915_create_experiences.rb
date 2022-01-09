@@ -1,5 +1,5 @@
 #Migration to create Experiences table
-class Experiences < ActiveRecord::Migration[6.1]
+class CreateExperiences < ActiveRecord::Migration[6.1]
   def change
     create_table :experiences do |t|
       t.string :company
