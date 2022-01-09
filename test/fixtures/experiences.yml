@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  company: MyString
+  position: MyString
+  start: 2022-01-08
+  end: 2022-01-08
+  description: MyText
+  profile_id: 
+
+two:
+  company: MyString
+  position: MyString
+  start: 2022-01-08
+  end: 2022-01-08
+  description: MyText
+  profile_id: 
