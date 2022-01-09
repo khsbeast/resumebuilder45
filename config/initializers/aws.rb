@@ -1,7 +1,8 @@
-Aws.config[:credentials] = Aws::Credentials.new(
-  ENV['BUCKETEER_AWS_ACCESS_KEY_ID'],
-  ENV['BUCKETEER_AWS_SECRET_ACCESS_KEY']
-)
-Aws.config[:region]      = 'us-east-1'
-
-S3 = Aws::S3::Client.new
+CarrierWave.configure do |config|
+    config.aws_bucket =  ENV['AWS_BUCKET']
+    config.aws_credentials = {
+      access_key_id:     ENV['AWS_ACCESS_KEY_ID'],
+      secret_access_key: ENV['AWS_SECRET_ACCESS_KEY'],
+      region:            'us-west-1'
+    }
+  end
