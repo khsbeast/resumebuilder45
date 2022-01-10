@@ -10,7 +10,8 @@ gem 'pg', '~> 1.1'
 # Use Puma as the app server
 gem "paperclip", "~> 6.0.0"
 
-gem "aws-sdk-s3"
+gem "aws-sdk-s3", require: false
+
 gem "figaro"
 
 gem 'puma', '~> 5.0'
