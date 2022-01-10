@@ -37,6 +37,7 @@ model experience
 controller project
 experience project
 routes.db
+project_url_attached_with_name
 
 # Unique public URL for resume that can be shared with everyone Status:Completed 
 

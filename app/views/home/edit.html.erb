@@ -54,7 +54,6 @@
 
         <%= render 'shared/edit_section', title: "Education" do %>
             <%= f.fields_for :educations do |tf| %>
-                <%= tf.object.school %>
                 <%= render 'shared/input/education', education: tf %>
             <% end %><br />
             <%= render 'shared/input/buttons/add', label: "+ Add Education", path: "/educations/new" %>

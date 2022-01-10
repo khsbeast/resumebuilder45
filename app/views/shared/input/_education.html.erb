@@ -1,5 +1,4 @@
 <%= render 'shared/edit_sub_section' do %>
-    <%= education.object.school %>
     <%= education.text_field :school, value: education.object.school, placeholder: "School" %><br/>
     <%= education.text_field :degree, value: education.object.degree, placeholder: "Degree" %><br/>
     <%= education.date_field :start, value: education.object.start, placeholder: "Start date" %><br/>

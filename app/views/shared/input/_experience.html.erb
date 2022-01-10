@@ -1,5 +1,4 @@
 <%= render 'shared/edit_sub_section' do %>
-    <%= experience.object.company %>
     <%= experience.text_field :company, value: experience.object.company, placeholder: "Company" %><br/>
     <%= experience.text_field :position, value: experience.object.position, placeholder: "Position" %><br/>
     <%= experience.date_field :start, value: experience.object.start, placeholder: "Start date" %><br/>
