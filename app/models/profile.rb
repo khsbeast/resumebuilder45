@@ -8,7 +8,6 @@ class Profile < ApplicationRecord
     accepts_nested_attributes_for(:projects , reject_if: :reject_project_create, allow_destroy: true)
 
     belongs_to :user
-    validates :avtaar, presence: true,allow_blank: true, format: {with: %r{\.gif|jpg|png}i} #check image fomrat
 
 
     def reject_education_create(education)
